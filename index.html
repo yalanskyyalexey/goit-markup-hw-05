@@ -28,7 +28,9 @@
           >
           <ul class="top-nav list">
             <li class="top-nav-item">
-              <a class="top-nav link studio" href="./index.html">Студия</a>
+              <a class="top-nav link studio active" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="top-nav-item">
               <a class="top-nav link" href="./portfolio.html">Портфолио</a>
@@ -63,7 +65,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Features -->
@@ -127,29 +131,38 @@
         <div class="container">
           <h2 class="about-us-title">Чем мы занимаемся</h2>
           <ul class="list about">
-            <li>
+            <li class="about-us-item">
               <img
                 src="./images/box1.jpg"
                 alt="our projects"
                 width="370"
                 height="294"
               />
+              <div class="about-us-overlay">
+                <h3>Десктопные приложения</h3>
+              </div>
             </li>
-            <li>
+            <li class="about-us-item">
               <img
                 src="./images/box2.jpg"
                 alt="our projects"
                 width="370"
                 height="294"
               />
+              <div class="about-us-overlay">
+                <h3>Мобильные приложения</h3>
+              </div>
             </li>
-            <li>
+            <li class="about-us-item">
               <img
                 src="./images/box3.jpg"
                 alt="our projects"
                 width="370"
                 height="294"
               />
+              <div class="about-us-overlay">
+                <h3>Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -450,5 +463,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close type="button">
+          <svg class="close-modal-icon">
+            <use href="./images/sprite.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js" defer></script>
   </body>
 </html>
