@@ -298,22 +298,26 @@ header {
 }
 
 .about-us-overlay {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  height: 70px;
-  width: 370px;
-  background: rgba(47, 48, 58, 0.8);
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
 }
 
-.about-us-overlay > h3 {
-  display: flex;
-  align-items: center;
+.about-us-overlay > p {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  padding: 27px 0;
+
   font-family: var(--main-font);
   font-weight: 700;
   line-height: 1.14;
   color: var(--main-bacground-color);
   text-transform: uppercase;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* =============== team =============== */
@@ -579,6 +583,10 @@ footer {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.footer-right {
+}
+
 /* =============== portfolio main ===============*/
 
 .portfolio-main-btn {
