@@ -617,14 +617,14 @@ footer {
 
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: opacity 250ms var(--main-effects);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 250ms var(--main-effects);
+  transition: opacity 250ms var(--main-effects),
+    transform 250ms var(--main-effects);
 }
 
 .backdrop.is-hidden .modal {
