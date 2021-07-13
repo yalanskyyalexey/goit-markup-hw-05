@@ -627,8 +627,9 @@ footer {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   transition: opacity 250ms var(--main-effects),
-    transform 250ms var(--main-effects);
+    transform 250ms var(--main-effects), visibility 250ms var(--main-effects);
 }
 
 .backdrop.is-hidden .modal {
